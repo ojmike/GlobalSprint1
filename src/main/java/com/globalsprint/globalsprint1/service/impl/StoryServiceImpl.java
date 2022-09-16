@@ -16,7 +16,6 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.Sort;
-import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
 import org.springframework.util.ObjectUtils;
 
@@ -56,7 +55,6 @@ public class StoryServiceImpl implements StoryService {
         }
 
         return  APIResponse.builder()
-                .code(HttpStatus.CREATED.name())
                 .message("Story created successfully.")
                 .body(story.getId())
                 .build();
@@ -72,7 +70,6 @@ public class StoryServiceImpl implements StoryService {
         storyRepository.delete(story);
 
         return  APIResponse.builder()
-                .code(HttpStatus.CREATED.name())
                 .message("Story deleted successfully.")
                 .body(story.getId())
                 .build();

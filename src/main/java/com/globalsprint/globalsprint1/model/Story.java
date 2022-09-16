@@ -28,5 +28,4 @@ public class Story extends BaseEntity{
     @JoinColumn(name = "created_by")
     private User user;
 
-
 }

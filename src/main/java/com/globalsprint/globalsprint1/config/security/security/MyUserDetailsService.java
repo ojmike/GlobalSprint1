@@ -1,5 +1,6 @@
-package com.globalsprint.globalsprint1.config.security;
+package com.globalsprint.globalsprint1.config.security.security;
 
+import com.globalsprint.globalsprint1.config.security.security.MyUserDetails;
 import com.globalsprint.globalsprint1.model.User;
 import com.globalsprint.globalsprint1.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;

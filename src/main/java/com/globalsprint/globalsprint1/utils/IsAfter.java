@@ -1,6 +1,7 @@
 package com.globalsprint.globalsprint1.utils;
 
 import javax.validation.Constraint;
+import javax.validation.Payload;
 import java.lang.annotation.Documented;
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
@@ -13,6 +14,8 @@ import static java.lang.annotation.RetentionPolicy.RUNTIME;
 @Constraint(validatedBy = DateValidator.class)
 @Documented
 public @interface IsAfter{
-   String message() default "{message.key}";
+   String message() default "Date of birth is invalid";
    String current();
+   Class<?>[] groups() default {};
+   Class<? extends Payload>[] payload() default {};
 }

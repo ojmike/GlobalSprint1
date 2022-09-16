@@ -1,4 +1,4 @@
-package com.globalsprint.globalsprint1.config.security;
+package com.globalsprint.globalsprint1.config.security.security;
 
 import com.globalsprint.globalsprint1.model.Role;
 import com.globalsprint.globalsprint1.model.User;

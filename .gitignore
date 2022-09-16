@@ -32,6 +32,6 @@ build/
 ### VS Code ###
 .vscode/
 *.jar
-*.properties
 mvnw
 *.cmd
+.mvn/wrapper/maven-wrapper.properties

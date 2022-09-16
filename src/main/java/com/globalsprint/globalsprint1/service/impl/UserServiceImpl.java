@@ -77,7 +77,6 @@ public class UserServiceImpl implements UserService {
             userRepository.delete(user);
             String message = format("User with name %s deleted successfully",user.getFirstName());
             return APIResponse.builder()
-                    .code(HttpStatus.OK.name())
                     .message(message)
                     .build();
         }else{
@@ -108,7 +107,6 @@ public class UserServiceImpl implements UserService {
                 .build();
 
         return APIResponse.builder()
-                .code(HttpStatus.OK.name())
                 .message(String.format("User with name %s updated successfully",user.getFirstName()))
                 .build();
 

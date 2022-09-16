@@ -1,6 +1,6 @@
 package com.globalsprint.globalsprint1.filters;
 
-import com.globalsprint.globalsprint1.config.security.MyUserDetailsService;
+import com.globalsprint.globalsprint1.config.security.security.MyUserDetailsService;
 import com.globalsprint.globalsprint1.utils.JwtUtil;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;

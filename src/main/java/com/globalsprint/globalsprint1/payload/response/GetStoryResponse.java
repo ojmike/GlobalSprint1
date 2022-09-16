@@ -15,11 +15,6 @@ public class GetStoryResponse {
 
     private String body;
 
-    public GetStoryResponse(String header, String body) {
-        this.header = header;
-        this.body = body;
-    }
-
     public GetStoryResponse(Story story) {
         this.header = story.getHeading();
         this.body = story.getBody();

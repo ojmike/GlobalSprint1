@@ -9,8 +9,5 @@ import javax.persistence.Entity;
 @Getter
 @Setter
 public class Role extends BaseEntity{
-
     private String name;
-
-
 }

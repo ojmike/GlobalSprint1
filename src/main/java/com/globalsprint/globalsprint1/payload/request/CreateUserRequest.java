@@ -28,11 +28,11 @@ public class CreateUserRequest {
     private String lastName;
 
     @NotBlank(message = "Email is required")
-    @EmailValidator(message = "Please provide a valid email")
+    @EmailValidator()
     private String email;
 
     @NotNull(message = "Date of birth is required")
-//    @IsAfter(current = "1949-12-31")
+    @IsAfter(current = "1949-12-31", message = "Date of birth should be after 1949-12-31 ")
     @DateTimeFormat(pattern = "yyyy-MM-dd")
     @JsonFormat(shape = JsonFormat.Shape.STRING,pattern = "yyyy-MM-dd")
     private LocalDate dateOfBirth;
@@ -44,6 +44,6 @@ public class CreateUserRequest {
     private Gender gender;
 
     @NotBlank(message = "password is required")
-//    @PasswordValidator(message = "Please provide a valid password")
+    @PasswordValidator(message = "Please provide a valid password")
     private String password;
 }

@@ -1,4 +1,4 @@
-package com.globalsprint.globalsprint1.config.security;
+package com.globalsprint.globalsprint1.config.security.security;
 
 import com.globalsprint.globalsprint1.filters.JwtRequestFilter;
 import org.springframework.context.annotation.Bean;

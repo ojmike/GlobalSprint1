@@ -1,6 +1,6 @@
 package com.globalsprint.globalsprint1.controller;
 
-import com.globalsprint.globalsprint1.config.security.MyUserDetailsService;
+import com.globalsprint.globalsprint1.config.security.security.MyUserDetailsService;
 import com.globalsprint.globalsprint1.payload.request.LoginRequest;
 import com.globalsprint.globalsprint1.payload.response.LoginResponse;
 import com.globalsprint.globalsprint1.utils.JwtUtil;
